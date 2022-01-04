@@ -32,7 +32,7 @@ public enum BluetoothError: Error {
     // Characteristics
     case characteristicsDiscoveryFailed(Service, Error?)
     case characteristicWriteFailed(Characteristic, Error?)
-    case characteristicReadFailed(Characteristic, Error?)
+    case characteristicReadFailed(Characteristic?, Error?)
     case characteristicNotifyChangeFailed(Characteristic, Error?)
     case characteristicSetNotifyValueFailed(Characteristic, Error?)
     // Descriptors
